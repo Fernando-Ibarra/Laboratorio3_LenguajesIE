@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background: saddlebrown;
+}
+#titulo{
+    text-align: center;
+}
+#imagen{
+    text-align: center;
+    width: 787px;
+    height: 186px;
+}
