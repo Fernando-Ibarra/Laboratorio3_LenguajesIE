@@ -16,13 +16,13 @@
 <body>
   <header>
     <h1 id="titulo"> REGISTRO DE DEPARTAMENTO </h1>
-    <p id="titulo"> <img src="Imagenes/Departamento.png" width="787" height="237"> </p>
+    <p id="titulo"> <img src="Imagenes/Departamentos.jpg" width="787" height="237"> </p>
   </header>
-<form action="todepartemento.php">
+<form action="todepartamento.php" method="post">
   <table width="700" border="0" align="center">
     <tr>
       <td> INGRESE NOMBRE DEL DEPARTAMENTO: </td>
-      <td> <input type="text" name="depto"> </td>
+      <td> <input type="text" name="departamento"> </td>
     </tr>
     <tr>
       <td> SELECCIONE REGIÓN: </td>
