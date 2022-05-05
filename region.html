@@ -1,9 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> REGIÓN </title>
+</head>
 <body>
-<form action="inregion.php" method="post">
-  INGRESE NOMBRE REGION<br>
-  <input type="text" name="region"><br>
-  <input type="submit" value="INGRESAR">
+  <header>
+    <h1 id="titulo"> REGISTRO DE REGIÓN </h1>
+    <p id="titulo"> <img src="Imagenes/Regiones.png" width="787" height="237"> </p>
+  </header>
+<form action="toregion.php" method="post">
+  <table width="700" border="0" align="center">
+    <tr>
+      <td id="Celda"> INGRESE NOMBRE DE LA REGIÓN: </td>
+      <td> <input type="text" name="region"> </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td> <input type="submit" value="INGRESAR"> </td>
+    </tr>
+  </table>
 </form>
 </body>
 </html>

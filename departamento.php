@@ -4,21 +4,41 @@
     $res = mysqli_query($conn,$sql);
     mysqli_close($conn);
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="estilos.css">  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> DEPARTAMENTO </title>
+</head>
 <body>
-<H1> DEPARTAMENTO </H1>
-<from action="indepto.php" method="post">
-INGRESE NOMBRE:
-<input type="text" name="depto"> <br>
-
-<select name="region">
-<?php
-  while ($fila = mysqli_fetch_assoc($res)){
-      echo '<option value="' . $fila['CODIGO'] . '">' . $fila['NOMBRE'] . '</option>';
-  }
-?>
-
-</select>
-<br>
-
-<input type="submit" name="GRABAR">
+  <header>
+    <h1 id="titulo"> REGISTRO DE DEPARTAMENTO </h1>
+    <p id="titulo"> <img src="Imagenes/Departamento.png" width="787" height="237"> </p>
+  </header>
+<form action="todepartemento.php">
+  <table width="700" border="0" align="center">
+    <tr>
+      <td> INGRESE NOMBRE DEL DEPARTAMENTO: </td>
+      <td> <input type="text" name="depto"> </td>
+    </tr>
+    <tr>
+      <td> SELECCIONE REGIÓN: </td>
+      <td><select name="region">
+        <?php
+          while ($fila = mysqli_fetch_assoc($res)){
+          echo '<option value="' . $fila['CODIGO'] . '">' . $fila['NOMBRE'] . '</option>';
+        }
+        ?>
+      </select> </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td> <input type="submit" value="INGRESAR"> </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
