@@ -14,11 +14,11 @@
   <title> MUNICIPIO </title>
 </head>
 <body>
-  <header>
-    <h1 id="titulo"> REGISTRO DE MUNICIPIO </h1>
-    <p id="titulo"> <img src="Imagenes/" width="787" height="237"> </p>
+  <header id="header">
+    <h1 id="tituloP"> REGISTRO DE MUNICIPIO </h1>
+    <p> <img src="Imagenes/municipios.jpg" width="787" height="237"> </p>
   </header>
-<form action="tomunicipio.php" method="post">
+<form action="tomunicipio.php" method="post" id="table">
   <table width="700" border="0" align="center">
     <tr>
         <td> INGRESE NOMBRE DEL MUNICIPIO: </td>
@@ -40,5 +40,11 @@
     </tr>
     </table>
 </form>
+<div id="botones">
+  <a href="region.html" class="Boton"> REGIÓN </a>
+  <a href="departamento.php" class="Boton"> DEPARTAMENTO </a>
+  <a href="index.html" class="Boton"> INDEX </a>
+  <a href="empleado.php" class="Boton"> EMPLEADO </a>
+</div>
 </body>
 </html>

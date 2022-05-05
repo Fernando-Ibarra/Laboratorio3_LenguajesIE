@@ -14,11 +14,11 @@
   <title> EMPLEADOS </title>
 </head>
 <body>
-  <header>
-    <h1 id="titulo"> REGISTRO DE EMPLEADO </h1>
-    <p id="titulo"> <img src="Imagenes/Empleado.png" width="787" height="237"> </p>
+  <header id="header">
+    <h1 id="tituloP"> REGISTRO DE EMPLEADO </h1>
+    <p> <img src="Imagenes/Empleado.png" width="787" height="237"> </p>
   </header>
-<form action="toempleado.php" method="post">
+<form action="toempleado.php" method="post" id="table">
   <table width="700" border="0" align="center">
     <tr>
       <td> INGRESE DPI DEL EMPLEADO: </td>
@@ -50,11 +50,13 @@
       <td>&nbsp;</td>
       <td> <input type="submit" value="INGRESAR"> </td>
     </tr>
-    <tr>
-      <td><input type=""></td>
-      <td> <input type="submit" value="INGRESAR"> </td>
-    </tr>
   </table>
 </form>
+<div id="botones">
+  <a href="region.html" class="Boton"> REGIÓN </a>
+  <a href="departamento.php" class="Boton"> DEPARTAMENTO </a>
+  <a href="municipio.php" class="Boton"> MUNICIPIO </a>
+  <a href="index.html" class="Boton"> INDEX </a>
+</div>
 </body>
 </html>
